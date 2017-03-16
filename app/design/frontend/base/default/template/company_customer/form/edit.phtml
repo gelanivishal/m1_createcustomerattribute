@@ -43,9 +43,9 @@
                 </div>
             </li>
             <li>
-                <label for="customer_terms"><?php echo $this->__('What is Your Industry?') ?></label>
+                <label for="customer_terms"><?php echo $this->__('How did you hear about us?') ?></label>
                 <div class="input-box">
-                    <select id="customer_terms" name="customer_terms" title="<?php echo $this->__('What is Your Industry?') ?>">
+                    <select id="customer_terms" name="customer_terms" title="<?php echo $this->__('How did you hear about us?') ?>">
                         <?php $options = Mage::getModel('company_customer/eav_entity_attribute_source_customeroptions')->getAllOptions();?>
                         <?php $value = $this->escapeHtml($this->getCustomer()->getCustomerTerms()) ?>
                         <?php foreach ($options as $option):?>
