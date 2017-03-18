@@ -6,6 +6,13 @@
         </Company_Customer>
     </modules>
     <global>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <customer_grid>Company_Customer_Block_Adminhtml_Customer_Grid</customer_grid>
+                </rewrite>
+            </adminhtml>
+        </blocks>
         <helpers>
             <company_customer>
                 <class>Company_Customer_Helper</class>
